@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke Suite" parallel="tests" data-provider-thread-count="10">
+    <parameter name="BROWSER" value="CHROME"/>
+    <parameter name="BROWSER_VERSION" value="101"/>
+    <parameter name="WAIT" value="30"/>
+    <parameter name="ENV" value="QA"/>
+
+    <test name="Google Search Smoke">
+        <classes>
+            <class name="runners.SmokeRunner"/>
+        </classes>
+    </test>
+
+</suite>
