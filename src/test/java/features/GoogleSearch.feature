@@ -17,8 +17,8 @@ Feature: Google Search
   Scenario Outline: Google Search
   Perform google search...
 
-    Given I read test data from "TestData" "Data1" "<id>"
-    Given I add "<value>" to "<key>"
+    #Given I read test data from "TestData" "Data1" "<id>"
+    #Given I add "<value>" to "<key>"
     When a user types in "<pozdrav>" in search filed
     And presses search button
     Then search result page should be shown "<pozdrav>"
